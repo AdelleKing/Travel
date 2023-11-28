@@ -1,27 +1,125 @@
+/*Currency Converter */
+
+.wrapper{
+  width:370px;
+  
+  padding: 30px;
+  border-radius: 7px;
+  
+}
+
+.wrapper form{
+  margin: 40px 0 20px 0;
+}
+
+form :where(#amount, select, button){
+  width:100%;
+  outline:none;
+  border:none;
+  border-radius: 5px;
+}
+
+#amount{
+  height:50px;
+  font-size: 17px;
+  padding: 0 15px;
+  border: 1px solid #999;
+}
+
+#amount:focus{
+  padding: 0 14px;
+  border: 2px solid #675afe;
+}
+
+form .drop-list{
+  display: flex;
+  margin-top: 20px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.drop-list .select-box{
+  display:flex;
+  height: 45px;
+  width: 115px;
+  border-radius: 5px;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #999;
+}
+
+.select-box select{
+width: auto;
+font-size: 16px;
+margin: 0 -5px 0 5px;
+}
+
+.select-box select::-webkit-scrollbar{
+  width: 8px;
+}
+
+.select-box select::-webkit-scrollbar-track{
+  background:#fff; 
+}
+.select-box select::-webkit-scrollbar-thumb{
+  background: #888;
+  border-radius: 8px;
+  border-right: 2px solid #fff;
+}
+.select-box img{
+  max-width: 25px;
+}
+
+.drop-list .icon{
+  cursor: pointer;
+  font-size: 22px;
+  margin-top: 30px;
+}
+
+form .exchange-rate{
+  font-size: 17px;
+  margin: 20px 0 30px;
+}
+
+form button{
+  height: 52px;
+  color: #fff;
+  font-size: 17px;
+  cursor: pointer;
+  background: #675afe;
+}
+
+
+
+
+
 /*MEDIA QUERIES*/
 
 @media screen and (min-width: 300px) { /*potentially do not need this?*/
-    body{
+    
+  
+  
+  body{
       margin: 0;
       padding: 0;
       width: 100%;
       overflow-x: hidden;
     }
-    .hero-image{
-        
-      
-      }
-      
+         
       .hero-text {
         width: 90%;
         text-align: center;
         position: absolute;
-        top: 50%;
+        top: 20%;
         left: 50%;
         transform: translate(-50%, -50%);
         color: white;
         
       }    
+
+      h4 span{
+        color: green;
+      }
 
       h4{
         font-size: 250%;
@@ -44,6 +142,8 @@
         width: 100%;
         padding: 0;
         margin: 0 0 0 5%;
+        display: flex;
+        flex-direction: column;
       }
       .wrapper form{
         margin:0;
@@ -71,11 +171,17 @@
         font-size: 15px;
         width: 90%;
       }
+
+      
       
       form .drop-list{
-       justify-content: space-around;
+       align-items: flex-end;
         margin: 0;
         padding-right: 10%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
       }
       
       .drop-list .select-box {

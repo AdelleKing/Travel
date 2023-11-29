@@ -1,5 +1,9 @@
 /*Currency Converter */
 
+#hidden{
+  display: none;
+}
+
 .wrapper{
   width:370px;
   
@@ -105,6 +109,12 @@ form button{
       width: 100%;
       overflow-x: hidden;
     }
+
+    .hero-img{
+      background-image: url("../images/img3.jpg");
+      height: 300%;
+      width: 100%;
+    }
          
       .hero-text {
         width: 90%;
@@ -136,6 +146,7 @@ form button{
       #map{
       height: 400px;
       width: 100%;
+      margin-top: 10%;
       }
 
       .wrapper{

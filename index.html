@@ -14,10 +14,11 @@
 
 <body>
     <header>
-      <video width="100%">
+      <!--<video width="100%">
         <source src="assets/images/video1.mp4" type="video/mp4">
                 Your browser does not support HTML5 video.
-      </video>
+      </video>-->
+      <div class="hero-img"></div>
           <div class="hero-text">
             <h4>To Travel is to Live</h4>
             
@@ -28,8 +29,40 @@
 <button onclick="showBucketList()">Show Bucket List</button>
 <button onclick="showCurrency()">Show Currency Converter</button>
 <button onclick="showCalendar()">Show Calendar</button><br><br>
-<div id="map"></div>
+
+<div id="hidden"><a href="index.html" class="button">Back</a>  
+  <div class="wrapper">
+  <h5 class="currency">Currency Converter</h5>
+  <form action="#" >
+    <div class="amount">
+      <p> Enter Amount</p>
+      <input id='amount' type="text" value="1">
+    </div>
+    <div class="drop-list">
+      <div class="from">
+      <p>From</p>
+      <div class="select-box">
+        <img src="https://flagsapi.com/GB/flat/64.png" alt="flags">
+      <select></select>
+      </div>
+    </div>
+    <div class="icon"><i class="fa-solid fa-arrow-right-arrow-left"></i></div>
+    <div class="to">
+      <p>To</p>
+      <div class="select-box">
+        <img src="https://flagsapi.com/US/flat/64.png" alt="flags">
+      <select></select>               
+      </div>
+    </div>
+  </div>
+  <div class="exchange-rate">Getting exchange rate...</div>
+  <button>Get Exchange Rate</button>
+  </form>
+  </div>
 </div>
+</div>
+<div id="map"></div>
+
 
  <!-- footer section -->
  <footer class="footerContainer">	
@@ -61,6 +94,8 @@
 
 <script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBo--uRx7qJcf4H-a5GJf9BcruuY6KEEIM&libraries=places&callback=initMap">
 </script>
+<script src="assets/js/countries.js"></script>
+<script src="assets/js/script.js"></script>
 <script src="assets/js/main.js"></script>
 
 

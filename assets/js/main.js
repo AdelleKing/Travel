@@ -1,4 +1,5 @@
 var div = document.getElementById('main');
+var currency = document.getElementById('hidden');
 var display = 0;
 
 var bucketlist = `<a href="index.html" class=“button”>Back</a> <div class="holiday-form"> 
@@ -12,40 +13,16 @@ var bucketlist = `<a href="index.html" class=“button”>Back</a> <div class="h
 <label for="visa"> I checked if I need a visa</label>
 </form>   
 </div>`
-var currency = `<a href="index.html" class=“button”>Back</a>  <div class="wrapper">
-<h5 class="currency">Currency Converter</h5>
-<form action="#" >
-  <div class="amount">
-    <p> Enter Amount</p>
-    <input id='amount' type="text" value="1">
-  </div>
-  <div class="drop-list">
-    <div class="from">
-    <p>From</p>
-    <div class="select-box">
-      <img src="https://flagsapi.com/GB/flat/64.png" alt="flags">
-    <select></select>
-    </div>
-  </div>
-  <div class="icon"><i class="fa-solid fa-arrow-right-arrow-left"></i></div>
-  <div class="to">
-    <p>To</p>
-    <div class="select-box">
-      <img src="https://flagsapi.com/US/flat/64.png" alt="flags">
-    <select></select>               
-    </div>
-  </div>
-</div>
-<div class="exchange-rate">Getting exchange rate...</div>
-<button>Get Exchange Rate</button>
-</form>
-</div>
-<script src="assets.js.script.js"></script><script src="assets/js/countries.js"></script>`
+
+
+
+
+
 
 function showBucketList(){
   if (display == 1){
     div.style.visibility ='visible';
-    div.innerHTML = bucketlist;
+     div.innerHTML = bucketlist;
     display = 0;
   }   
   else {
@@ -55,9 +32,9 @@ function showBucketList(){
 }
 
 function showCurrency(){
-  if (display == 1){
-    div.style.visibility ='visible';
-    div.innerHTML = currency;
+  if (display == 1){   
+    div.style.visibility='visible';
+    currency.style.display ='block';
     display = 0;
   } else {
     div.style.visibility ='visible';
@@ -75,7 +52,6 @@ function showCalendar(){
     display =1;
   }
 }
-console.log('working');
 
 let map;
 let service;

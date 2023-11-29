@@ -1,4 +1,3 @@
-console.log('I am working');
 
 const dropList = document.querySelectorAll('.drop-list select'),
 fromCurrency=document.querySelector('.from select'),

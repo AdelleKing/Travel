@@ -1,4 +1,27 @@
+
+
+
+button{
+  padding:0.5em 1em;
+  margin:0.25em;
+  border-radius: 1em;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+button:hover{
+  background-color: red;
+}
+
+
 /*Currency Converter */
+
+#main{
+  display: flex;
+ flex-wrap: wrap;
+ justify-content: center;
+}
 
 #hidden{
   display: none;
@@ -6,11 +29,9 @@
 
 .wrapper{
   width:370px;
-  
   padding: 30px;
   border-radius: 7px;
-  
-}
+  }
 
 .wrapper form{
   margin: 40px 0 20px 0;
@@ -93,13 +114,38 @@ form button{
   background: #675afe;
 }
 
+footer{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+ul#social-networks{
+display: flex;
+list-style-type:none;   
+padding: 0;
+width:30%;
+}
+
+ul#social-networks li {
+  display:flex;
+  padding-left: 35%;
+  padding-right: 35%;
+  font-size: 20px;
+  
+}
+
+.fa-brands,
+.fa-regular {
+  color:#463c7b
+} 
 
 
 
 
 /*MEDIA QUERIES*/
 
-@media screen and (min-width: 300px) { /*potentially do not need this?*/
+@media screen and (max-width: 1440px) { /*potentially do not need this?*/
     
   
   
@@ -110,11 +156,7 @@ form button{
       overflow-x: hidden;
     }
 
-    .hero-img{
-      background-image: url("../images/img3.jpg");
-      height: 300%;
-      width: 100%;
-    }
+    
          
       .hero-text {
         width: 90%;
@@ -148,6 +190,23 @@ form button{
       width: 100%;
       margin-top: 10%;
       }
+
+      /*bucket list*/
+      .holiday-form{
+        display: flex;
+      }
+
+      .form1, .form2{
+        display: flex;
+        width:50%;
+      }
+
+      input[type=checkbox]:checked + label.strikethrough{
+        text-decoration: line-through;
+        color:red;
+      }
+
+      
 
       .wrapper{
         width: 100%;
@@ -226,32 +285,8 @@ form button{
           margin: 0 5% 0 8%;
         }
 
-      footer{
-        display: flex;
-        flex-direction: row;
-     }
+
+
       
-      ul#social-networks{
-      display: flex;
-      list-style-type:none;   
-      padding: 0;
-      
+
       }
-      
-      ul#social-networks li {
-        display:flex;
-        padding-left: 35%;
-        padding-right: 35%;
-        font-size: 20px;
-        
-      }
-      
-      .fa-brands,
-      .fa-regular {
-        color:#463c7b
-      } 
-      
-      
-    
-    
-    }

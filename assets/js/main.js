@@ -2,8 +2,26 @@ var div = document.getElementById('main');
 var currency = document.getElementById('hidden');
 var display = 0;
 
-var bucketlist = `<a href="index.html" class=“button”>Back</a> <div class="holiday-form"> 
-<h1>Holiday CheckList</h1>        
+var bucketlist = `<a href="index.html" class=“button”>Back</a> 
+<h1>Holiday CheckList</h1>
+<div class="holiday-form">  
+<div class="form1">      
+<form>
+<input type="checkbox" id="passport" name="passport" value="passport1">
+<label for="passport" class="strikethrough"> Checked passport is in date</label><br>
+<input type="checkbox" id="insurance" name="insurnace" value="Insurnace1">
+<label for="insurance" class="strikethrough"> I have holiday insurance</label><br>
+<input type="checkbox" id="visa" name="visa" value="Visa1">
+<label for="visa" class="strikethrough"> I checked if I need a visa</label>
+<input type="checkbox" id="passport" name="passport" value="passport1">
+<label for="passport" class="strikethrough"> Checked passport is in date</label><br>
+<input type="checkbox" id="insurance" name="insurnace" value="Insurnace1">
+<label for="insurance" class="strikethrough"> I have holiday insurance</label><br>
+<input type="checkbox" id="visa" name="visa" value="Visa1">
+<label for="visa" class="strikethrough"> I checked if I need a visa</label>
+</form>  
+</div> 
+<div class="form2">      
 <form>
 <input type="checkbox" id="passport" name="passport" value="passport1">
 <label for="passport"> Checked passport is in date</label><br>
@@ -11,7 +29,8 @@ var bucketlist = `<a href="index.html" class=“button”>Back</a> <div class="h
 <label for="insurance"> I have holiday insurance</label><br>
 <input type="checkbox" id="visa" name="visa" value="Visa1">
 <label for="visa"> I checked if I need a visa</label>
-</form>   
+</form>  
+</div> 
 </div>`
 
 

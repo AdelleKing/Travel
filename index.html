@@ -24,9 +24,9 @@
           </div>
         </header>
 <div id="main" class="main">
-<button onclick="showBucketList()">Show Bucket List</button>
-<button onclick="showCurrency()">Show Currency Converter</button>
-<button onclick="showCalendar()">Show Calendar</button><br><br>
+<button class="navButton" onclick="showBucketList()">Holiday Checklist</button>
+<button class="navButton" onclick="showCurrency()">Currency Converter</button>
+<button class="navButton" onclick="showCalendar()">Calendar</button><br><br>
 
 <div id="hidden"><a href="index.html" >Back</a>  
   <div class="wrapper">
@@ -57,6 +57,35 @@
   <button>Get Exchange Rate</button>
   </form>
   </div>
+</div>
+<div id="bucketListHidden"> <a href="index.html" class=“button”>Back</a> 
+<h1>Holiday CheckList</h1>
+<div class="form1">    
+<form>
+    <input type="text" id="inputText" placeholder="Your To-Do actions" required>
+  <button class="bucketButton" type="button" onclick="createCheckbox()">add to list</button> 
+</form> 
+  </div>
+
+<form id="container">
+<input type="checkbox" id="passport"  name="passport" value="passport1">
+<label for="passport" class="strikethrough"> Checked passport is in date<span>X</span></span> </label><br>
+
+<input type="checkbox" id="insurance" name="insurance" value="Insurnace1">
+<label for="insurance" class="strikethrough"> Have valid insurance</label><br>
+
+<input type="checkbox" id="visa" name="visa" value="Visa1" >
+<label for="visa" class="strikethrough"> Do I need a visa? </label><br>
+
+<input type="checkbox" id="currency" name="currency" value="currency1">
+<label for="currency" class="strikethrough"> Exchange the holiday money </label><br>
+
+<input type="checkbox" id="airport" name="airport" value="airport1">
+<label for="airport" class="strikethrough"> airport transfers booked</label><br>
+
+<input type="checkbox" id="luggage" name="luggage" value="luggage1">
+<label for="luggage" class="strikethrough"> luggage tags ready</label><br>
+</form>
 </div>
 </div>
 <div id="map"></div>

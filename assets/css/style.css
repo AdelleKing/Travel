@@ -1,7 +1,12 @@
 
+ body{
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      overflow-x: hidden;
+    }
 
-
-button{
+.navButton{
   padding:0.5em 1em;
   margin:0.25em;
   border-radius: 1em;
@@ -10,7 +15,7 @@ button{
   cursor: pointer;
 }
 
-button:hover{
+.navButton:hover{
   background-color: red;
 }
 
@@ -19,7 +24,7 @@ button:hover{
 
 #main{
   display: flex;
- flex-wrap: wrap;
+ flex-direction: column;
  justify-content: center;
 }
 
@@ -114,6 +119,7 @@ form button{
   background: #675afe;
 }
 
+
 footer{
   display: flex;
   flex-direction: row;
@@ -146,17 +152,6 @@ ul#social-networks li {
 /*MEDIA QUERIES*/
 
 @media screen and (max-width: 1440px) { /*potentially do not need this?*/
-    
-  
-  
-  body{
-      margin: 0;
-      padding: 0;
-      width: 100%;
-      overflow-x: hidden;
-    }
-
-    
          
       .hero-text {
         width: 90%;
@@ -192,21 +187,51 @@ ul#social-networks li {
       }
 
       /*bucket list*/
+
+      #bucketListHidden{
+        display: none;
+      }
+
       .holiday-form{
         display: flex;
       }
 
-      .form1, .form2{
+      .form1{
         display: flex;
         width:50%;
+        margin:5%;
       }
 
       input[type=checkbox]:checked + label.strikethrough{
         text-decoration: line-through;
         color:red;
+        
       }
 
+      .label {
+        display: inline-block;
+        width: 100px;
+        text-align: right;
+      }
       
+      .input {
+        display: inline-block;
+        margin-left: 10px;
+      }
+      form{
+        display: flex;
+      }
+
+      #container{
+        display: inline; 
+      }
+
+      .bucketButton{
+        width: 100px;
+        font-size: 80%;
+      }
+
+      /*currency converter*/
 
       .wrapper{
         width: 100%;

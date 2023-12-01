@@ -1,47 +1,12 @@
 var div = document.getElementById('main');
 var currency = document.getElementById('hidden');
+var bucket = document.getElementById('bucketListHidden');
 var display = 0;
-
-var bucketlist = `<a href="index.html" class=“button”>Back</a> 
-<h1>Holiday CheckList</h1>
-<div class="holiday-form">  
-<div class="form1">      
-<form>
-<input type="checkbox" id="passport" name="passport" value="passport1">
-<label for="passport" class="strikethrough"> Checked passport is in date</label><br>
-<input type="checkbox" id="insurance" name="insurnace" value="Insurnace1">
-<label for="insurance" class="strikethrough"> I have holiday insurance</label><br>
-<input type="checkbox" id="visa" name="visa" value="Visa1">
-<label for="visa" class="strikethrough"> I checked if I need a visa</label>
-<input type="checkbox" id="passport" name="passport" value="passport1">
-<label for="passport" class="strikethrough"> Checked passport is in date</label><br>
-<input type="checkbox" id="insurance" name="insurnace" value="Insurnace1">
-<label for="insurance" class="strikethrough"> I have holiday insurance</label><br>
-<input type="checkbox" id="visa" name="visa" value="Visa1">
-<label for="visa" class="strikethrough"> I checked if I need a visa</label>
-</form>  
-</div> 
-<div class="form2">      
-<form>
-<input type="checkbox" id="passport" name="passport" value="passport1">
-<label for="passport"> Checked passport is in date</label><br>
-<input type="checkbox" id="insurance" name="insurnace" value="Insurnace1">
-<label for="insurance"> I have holiday insurance</label><br>
-<input type="checkbox" id="visa" name="visa" value="Visa1">
-<label for="visa"> I checked if I need a visa</label>
-</form>  
-</div> 
-</div>`
-
-
-
-
-
 
 function showBucketList(){
   if (display == 1){
     div.style.visibility ='visible';
-     div.innerHTML = bucketlist;
+    bucket.style.display ='block';
     display = 0;
   }   
   else {
@@ -118,3 +83,46 @@ function createMarker(place) {
 
 window.initMap = initMap
 
+
+
+//holiday checklist
+function createCheckbox() {
+  // Get the input element and its value
+  var input = document.getElementById("inputText");
+  var text = input.value;
+  if(text === ''){
+    alert('text field is empty')
+    return;
+  }
+  
+  const close = document.querySelector('span');
+  for(let i=0; i<close.length; i++){
+    close[i].addEventListener('click', ()=>{
+      close[i].parentElement.style.display='none';
+    })
+  }
+
+  // Create a new checkbox element
+  var checkbox = document.createElement("input");
+  checkbox.type = "checkbox";
+  checkbox.value = text;
+  checkbox.name = text;
+  
+
+  // Create a new label element and append the text
+  var label = document.createElement("label");
+  label.appendChild(document.createTextNode(text));
+  label.className = 'strikethrough'
+
+  // Append the checkbox and label to the document
+  var container = document.getElementById("container");
+  container.appendChild(checkbox);
+  container.appendChild(label);
+  container.appendChild(document.createElement("br"));
+
+  // Clear the input value
+  input.value = "";
+
+  
+
+}

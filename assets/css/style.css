@@ -38,11 +38,11 @@
   border-radius: 7px;
   }
 
-.wrapper form{
+.currencyForm{
   margin: 40px 0 20px 0;
 }
 
-form :where(#amount, select, button){
+.currencyForm :where(#amount, select, button){
   width:100%;
   outline:none;
   border:none;
@@ -61,7 +61,7 @@ form :where(#amount, select, button){
   border: 2px solid #675afe;
 }
 
-form .drop-list{
+.currencyForm .drop-list{
   display: flex;
   margin-top: 20px;
   align-items: center;
@@ -106,12 +106,12 @@ margin: 0 -5px 0 5px;
   margin-top: 30px;
 }
 
-form .exchange-rate{
+.currencyForm .exchange-rate{
   font-size: 17px;
   margin: 20px 0 30px;
 }
 
-form button{
+.currencyForm button{
   height: 52px;
   color: #fff;
   font-size: 17px;
@@ -151,7 +151,7 @@ ul#social-networks li {
 
 /*MEDIA QUERIES*/
 
-@media screen and (max-width: 1440px) { /*potentially do not need this?*/
+@media screen and (max-width:767px)  { 
          
       .hero-text {
         width: 90%;
@@ -218,7 +218,8 @@ ul#social-networks li {
         display: inline-block;
         margin-left: 10px;
       }
-      form{
+      
+      .formChecklist{
         display: flex;
       }
 
@@ -229,7 +230,10 @@ ul#social-networks li {
       .bucketButton{
         width: 100px;
         font-size: 80%;
+        margin-left: 2%;
       }
+
+     
 
       /*currency converter*/
 
@@ -240,12 +244,17 @@ ul#social-networks li {
         display: flex;
         flex-direction: column;
       }
-      .wrapper form{
+      .wrapper .currencyForm{
         margin:0;
       }
       
       .currency{
         font-size: 160%;
+      }
+
+      .currencyForm{
+        display: flex;
+        flex-direction: column;
       }
       
       .amount{
@@ -269,7 +278,7 @@ ul#social-networks li {
 
       
       
-      form .drop-list{
+     .currencyForm .drop-list{
        align-items: flex-end;
         margin: 0;
         padding-right: 10%;
@@ -299,12 +308,12 @@ ul#social-networks li {
           max-width: 15px;
         }
       
-        form .exchange-rate{
+      .currencyForm .exchange-rate{
           font-size: 14px;
           margin-left: 9%;
         }
       
-        form button{
+        .currencyForm button{
           height: 30px;
           width: 80%;
           margin: 0 5% 0 8%;
@@ -315,3 +324,92 @@ ul#social-networks li {
       
 
       }
+
+      @media screen and (min-width: 768px) { 
+         
+        .hero-text {
+          width: 90%;
+          text-align: center;
+          position: absolute;
+          top: 20%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          color: white;
+          
+        }    
+  
+        h4 span{
+          color: green;
+        }
+  
+        h4{
+          font-size: 250%;
+          font-family: 'Ephesis', cursive;
+        }
+        
+        h1{
+          font-size: 30px;
+          text-align: center;
+          font-family: 'Ephesis', cursive;
+          color: black;
+        } 
+          
+        #map{
+        height: 400px;
+        width: 100%;
+        margin-top: 10%;
+        }
+  
+        /*bucket list*/
+  
+        #bucketListHidden{
+          display: none;
+        }
+  
+        .holiday-form{
+          display: flex;
+        }
+  
+        .form1{
+          display: flex;
+          width:60%;
+          margin:5%;
+          flex-direction: row;
+          justify-content: flex-end;
+
+        }
+  
+        input[type=checkbox]:checked + label.strikethrough{
+          text-decoration: line-through;
+          color:red;
+          
+        }
+  
+        .label {
+          display: inline-block;
+          width: 100px;
+          text-align: right;
+        }
+        
+        .input {
+          display: inline-block;
+          margin-left: 10px;
+        }
+          
+
+        .formChecklist{
+          display: flex;
+        }
+  
+        #container{
+          display: flex; 
+        }
+  
+        .bucketButton{
+          width: 100px;
+          font-size: 80%;
+          margin-left: 2%;
+        }
+  }
+
+  

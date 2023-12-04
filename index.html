@@ -26,12 +26,11 @@
 <div id="main" class="main">
 <button class="navButton" onclick="showBucketList()">Holiday Checklist</button>
 <button class="navButton" onclick="showCurrency()">Currency Converter</button>
-<button class="navButton" onclick="showCalendar()">Calendar</button><br><br>
 
 <div id="hidden"><a href="index.html" >Back</a>  
   <div class="wrapper">
   <h5 class="currency">Currency Converter</h5>
-  <form action="#" >
+  <form class="currencyForm" action="#" >
     <div class="amount">
       <p> Enter Amount</p>
       <input id='amount' type="text" value="1">
@@ -61,7 +60,7 @@
 <div id="bucketListHidden"> <a href="index.html" class=“button”>Back</a> 
 <h1>Holiday CheckList</h1>
 <div class="form1">    
-<form>
+<form class="formChecklist">
     <input type="text" id="inputText" placeholder="Your To-Do actions" required>
   <button class="bucketButton" type="button" onclick="createCheckbox()">add to list</button> 
 </form> 
@@ -69,7 +68,7 @@
 
 <form id="container">
 <input type="checkbox" id="passport"  name="passport" value="passport1">
-<label for="passport" class="strikethrough"> Checked passport is in date<span>X</span></span> </label><br>
+<label for="passport" class="strikethrough"> Checked passport is in date</label><br>
 
 <input type="checkbox" id="insurance" name="insurance" value="Insurnace1">
 <label for="insurance" class="strikethrough"> Have valid insurance</label><br>
@@ -80,11 +79,7 @@
 <input type="checkbox" id="currency" name="currency" value="currency1">
 <label for="currency" class="strikethrough"> Exchange the holiday money </label><br>
 
-<input type="checkbox" id="airport" name="airport" value="airport1">
-<label for="airport" class="strikethrough"> airport transfers booked</label><br>
 
-<input type="checkbox" id="luggage" name="luggage" value="luggage1">
-<label for="luggage" class="strikethrough"> luggage tags ready</label><br>
 </form>
 </div>
 </div>

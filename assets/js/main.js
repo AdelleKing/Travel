@@ -26,16 +26,7 @@ function showCurrency(){
   }
 }
 
-function showCalendar(){
-  if (display == 1){
-    div.style.visibility ='visible';
-    div.innerHTML = `<a href="index.html" class=“button”>Back</a> <p>Calendar will go here </p>`;
-    display = 0;
-  } else {
-    div.style.visibility ='visible';
-    display =1;
-  }
-}
+
 
 let map;
 let service;
@@ -95,12 +86,7 @@ function createCheckbox() {
     return;
   }
   
-  const close = document.querySelector('span');
-  for(let i=0; i<close.length; i++){
-    close[i].addEventListener('click', ()=>{
-      close[i].parentElement.style.display='none';
-    })
-  }
+ 
 
   // Create a new checkbox element
   var checkbox = document.createElement("input");
@@ -112,7 +98,7 @@ function createCheckbox() {
   // Create a new label element and append the text
   var label = document.createElement("label");
   label.appendChild(document.createTextNode(text));
-  label.className = 'strikethrough'
+  //label.className = 'strikethrough'
 
   // Append the checkbox and label to the document
   var container = document.getElementById("container");

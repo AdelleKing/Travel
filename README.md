@@ -1,31 +1,17 @@
 
-
-Points for javascript project 2 – A travel website
-
-Features:
-•	World map – linked to account to highlight bucket list destinations
-•	Login functionality to create bucket list
-•	Travel planner – search travel deals on 3rd party websites
-•	Bucket list planner – add activities I’d like to see/do 
-•	Tick off when I’ve achieved something on my bucket list
-•	Travel checklist – before, during, after
-
-To include/think about and add to README:
-•	Need to have some Test Driven Development within the code. 
-•	Readable Isolated Thorough Explicit 
 # **Travel**
 ## **Site Overview**
 Welcome to Travel!
 
-Welcome to a place dedicated to travel and travelling experiences. Use this site to plan your next vacation and store future experiences you wish you have. 
+Welcome to a place dedicated to travel and travelling experiences. Use this site to plan your next vacation and store future experiences you wish to have. 
 
 The map function will allow users to pick and view destinations, see local tourist attractions and local places of interest and look at directions to and from various destinations. 
 
-The bucket list tab will allow users to add experiences and things to do to help plan thier next vacation location.
+The bucket list tab will allow users to add experiences and things to do to help plan thier next vacation.
 
 The currency converter will provide real time exchange rates for the currency supplied, further allowing users to make decisions on where their next vacation will be. 
 
-![Am I responsive screenshot](assets/images/screenshots/AmIResponsive.png)
+![Am I responsive screenshot](assets/images/wireframes/amIresponsive.png)
 
 ## Table of contents:
 1. [**Site Overview**](#site-overview)
@@ -88,34 +74,31 @@ The currency converter will provide real time exchange rates for the currency su
 
 
 ### **Wireframes:**
-I used Balsamiq to create a visual representation of the Tribe site - below are the initial idea designs:
+I used Balsamiq to create a visual representation of the Travel site - below are the initial idea designs:
 
 * Desktop Wireframes:
-    * ![Homepage](assets/images/screenshots/index_wireframe.png)
-    * ![Activities](assets/images/screenshots/activities_wreframe.png)
-    * ![Business](assets/images/screenshots/business_wreframe.png)
-    * ![SignUp](assets/images/screenshots/signUP_wreframe.png)
+    * ![Homepage](assets/images/wireframes/homePage.png)
+    * ![bucket](assets/images/wireframes/bucketTab.png)
+    * ![currency](assets/images/wireframes/currencyTab.png)
+   
 
-There was some deviation from the original wireframes due to time and additional functionality needed to support the designs.
+I had wanted to add a calendar to the site, but omitted this due to time restraints. ![calendar](assets/images/wireframes/calendarTab.png)
 
-* The Business page were not created due to the need for backend functionality which was out of the scope of this project.
-* The signup page also required the need for backend functionality, a standard form is used to enable people to RSVP to events on the activities page, currently, and the sign in page has been omitted until the backend functionality is available.
-* The ability to search and use a map functionality also required backend functionality and were left out at this stage.
-* To improve the User experience, the hero image was removed from all pages except the index page, as users could not differentiate between pages when using the navigation bar until they scrolled down. 
+ 
 
 
 
 ### **Color Scheme:**
-I wanted the colour scheme to be a dark colour which contrasted a white background, I choose rgba(153,30,2, 1) Totem pole for the main background colours and the main font colours. Contrasting with a white font colour against the totem pole background. I have also used black font in places where I felt it was needed to differentiate between areas. 
+There is very little colour scheme through this website, I wanted to keep it as clean as possible. I used colour to emphasis aspects and to highlight buttons being used.
 
-This color also complimented the African print design I wanted to incorporate into the website - I used this as a background on the activity elements of the site.
+The colours selected were keeping in line with the clean minamilist look.
 
 ### **Technology Used:**
 ## Languages Used
 
 -   [HTML5](https://en.wikipedia.org/wiki/HTML5)
 -   [CSS3](https://en.wikipedia.org/wiki/Cascading_Style_Sheets)
-- JavaScript (JavaScript | MDN (mozilla.org))
+-   [JavaScript] (JavaScript | MDN (mozilla.org))
 
 ### Frameworks, Libraries & Programs Used
 

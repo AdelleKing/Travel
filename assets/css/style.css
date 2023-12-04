@@ -6,6 +6,11 @@
       overflow-x: hidden;
     }
 
+    .video{
+min-height: 100%;
+min-width: 100%;
+    }
+
 .navButton{
   padding:0.5em 1em;
   margin:0.25em;

@@ -149,43 +149,28 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
 
 -   [W3C Markup Validator](https://validator.w3.org/nu/) 
     
-    Homepage:
-
     Initial tests show various errors to be corrected.
-    ![Initial test results](assets/images/screenshots/homepage_initial_test_results.png)
+    ![Initial test results](testing/initialHTMLtest.png)
     After fixing the errors, the final test results confirm no errors or warnings.
-    ![Final test results](assets/images/screenshots/homepage_final_test_results.png)
+    ![Final test results](testing/finalHTMLtest.png)
 
 
-    Event Page:
-
-    Initial tests show various errors to be corrected.
-    ![Initial test results](assets/images/screenshots/event_page_inital_test_results.png)
-    After fixing the errors, the final test results confirm no errors or warnings.
-    ![Final test results](assets/images/screenshots/final_event_page_test_results.png)
-
-    About:
-
-    Initial tests show various errors to be corrected.
-    ![Initial test results](assets/images/screenshots/about_initial_test_results.png)
-    After fixing the errors, the final test results confirm no errors or warnings.
-    ![Final test results](assets/images/screenshots/about_final_test_results.png)
-
--   [W3C CSS Validator](https://jigsaw.w3.org/css-validator) 
+    [W3C CSS Validator](https://jigsaw.w3.org/css-validator) 
 
     CSS:
 
     Initial tests show various errors to be corrected.
-    ![Initial test results](assets/images/screenshots/CSS_initial_test_results.png)
-    After fixing the errors, the final test results confirm no errors or warnings.
-    ![Final test results](assets/images/screenshots/CSS_final_test_results.png)
+    ![Initial test results](testing/initialCSStest.png)
+    
+JAvascript
 
-    However, the initial test on the stylesheet showed the use of webkit within the backface code (lines 227 and 237) were not best practice. After removing these the images in firefox for the activities page do not perform the same as their counterparts on the Edge browser. 
+THere were no erros identified within the console log within the browser ![console Log view](testing/consoleLog.png)
+    
+-  
 
-    I have included a screenshot of compatibility for the use of backface across the browsers, I am unable to investigate further due to time restraints.
-    ![MND Docs compatibility](assets/images/screenshots/backface_compatibility_confirmation.png)
+  
 
-ADD A LINK TO PAGE WITH JEST TESTING
+
 
 
 ### Testing User Stories from User Experience (UX) Section
@@ -220,7 +205,6 @@ a.	The exchange rate API can be used to select the current currency and the dest
 I wanted to ensure the site supported all visitors, I included the following in my code to ensure this:
 
 * All images contained an alt tag
-* All images were converted into WEBP, a reduced file size to support the load time of images (https://convertio.co/webp-converter/)
 * The site is responsive to different screen sizes 
 * I used semantic elements throughout the design
 

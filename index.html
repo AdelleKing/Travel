@@ -10,23 +10,21 @@
 <link href="https://fonts.googleapis.com/css2?family=Ephesis&family=Montserrat:wght@200&family=Oswald:wght@300&display=swap" rel="stylesheet">
     <title>Lets Travel</title>
 </head>
-
-
 <body>
-    <header>
+    <header> <!--Used a video as the hero rather than an image as I could not 
+      get an image which scaled nicely as the screen size changed-->
       <video class="video" autoplay muted>
         <source src="assets/images/video.mp4" type="video/mp4" >
                 Your browser does not support HTML5 video.
       </video>
-      <div class="hero-img"></div>
           <div class="hero-text">
             <h4>To Travel is to Live</h4>       
           </div>
         </header>
-<div id="main" class="main">
+<div id="main" class="main"><!-- these are the buttons which house the toggle functions-->
 <button class="navButton" onclick="showBucketList()">Holiday Checklist</button>
 <button class="navButton" onclick="showCurrency()">Currency Converter</button>
-
+<!--when the above buttons are clicked this HTML will be displayed.-->
 <div id="hidden"><a href="index.html" >Back</a>  
   <div class="wrapper">
   <h5 class="currency">Currency Converter</h5>
@@ -57,15 +55,16 @@
   </form>
   </div>
 </div>
+<!--this HTML will be displayed when the checklist button above is clicked-->
 <div id="bucketListHidden"> <a href="index.html" class=“button”>Back</a> 
 <h1>Holiday CheckList</h1>
 <div class="form1">    
-<form class="formChecklist">
+<form class="formChecklist"><!--this section is for the user specific to-do actions-->
     <input type="text" id="inputText" placeholder="Your To-Do actions" required>
   <button id="bucketButton" class="strikethrough" type="button" onclick="createCheckbox()">add to list</button> 
 </form> 
   </div>
-
+<!-- I have added some pre-populated to-do's to the list to start the user off-->
 <form id="container">
 <input type="checkbox" id="passport"  name="passport" value="passport1">
 <label for="passport" class="strikethrough"> Checked passport is in date</label><br>
@@ -83,10 +82,10 @@
 </form>
 </div>
 </div>
-<div id="map"></div>
+<div id="map"></div><!--using the google api below, this map will be visible thorughout the user journey-->
 
 
- <!-- footer section -->
+ <!-- footer section, using links to various social media and email functionality -->
  <footer class="footerContainer">	
   <ul id="social-networks">
         <li>
@@ -112,14 +111,12 @@
       </ul>
 </footer>
 
-
+<!--I found if the main.js script was final the above functionality would not work, 
+  this is why it is first to be ran when the page loads-->
 <script src="assets/js/main.js"></script>
 <script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBo--uRx7qJcf4H-a5GJf9BcruuY6KEEIM&libraries=places&callback=initMap">
 </script>
 <script src="assets/js/countries.js"></script>
 <script src="assets/js/script.js"></script>
-
-
-
 </body>
 </html>

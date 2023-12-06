@@ -98,7 +98,7 @@ function createCheckbox() {
   // Create a new label element and append the text
   var label = document.createElement("label");
   label.appendChild(document.createTextNode(text));
-  //label.className = 'strikethrough'
+  label.className = 'strikethrough'
 
   // Append the checkbox and label to the document
   var container = document.getElementById("container");
@@ -109,6 +109,6 @@ function createCheckbox() {
   // Clear the input value
   input.value = "";
 
-  
+  }
 
-}
+

@@ -164,14 +164,7 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
     
 JAvascript
 
-THere were no erros identified within the console log within the browser ![console Log view](testing/consoleLog.png)
-    
--  
-
-  
-
-
-
+There were no erros identified within the console log within the browser ![console Log view](testing/consoleLog.png)
 
 ### Testing User Stories from User Experience (UX) Section
 1)	As a user, I want to look at the world map and see where vacation options could be in:
@@ -188,6 +181,7 @@ b.	The map can also support the user with finding local transport options.
 4)	As a user, I want to store experiences I’d like to have, electronically :
 a.	The user can use the bucket list tab to note the experiences they would like to experience in the future. This can include places, experiences, activities, festivities.
 b.	This could be improved by using backend functionality which would store the users input so they can return without losing any data.
+
 5)	As a user, I want the ability to make travel decisions influenced by the exchange rate of that destination. 
 a.	The exchange rate API can be used to select the current currency and the destination currency and see the real time exchange rates. 
 
@@ -204,23 +198,20 @@ a.	The exchange rate API can be used to select the current currency and the dest
 ### Accessibility
 I wanted to ensure the site supported all visitors, I included the following in my code to ensure this:
 
-* All images contained an alt tag
 * The site is responsive to different screen sizes 
 * I used semantic elements throughout the design
 
 ### ***Known Bugs***
+*  Users cannot  use the ‘enter’ key when entering text into the input field. When they do, it refreshes the page and returns the user to the main page view.
 
-* adding the bootstrap link caused the border image to disable. 
-    - Solution:  removed bootstrap link and used CSS to obtain result.
-* adding event listener to map caused map to disappear 
-![Image](assets/images/bug-screenshots/broken-map.png) 
-    - Solution: although I was able to fix this bug by editing the code, I did remove this functionality due to increased need for javascript to fully deliver what I wanted from the map. 
-* I was unable to see why the middle image on the index.html page was longer than the other images. From using the inspect tool - all attributes for the three containers were the same. 
-    - solution: bug not fixed due to time restraints. 
-* There is a slight delay in the text re-sizing as the page is re-sized and overflows from the container on the events page. 
-    - solution: bug not fixed due to time restraints
-* I was unable to change the nav bar to be on one line when the screen size was a laptop or bigger. It is currently stacked.
-    -solution: bug not fixed due to time restraints.    
+Ideally the user can choose between clicking the button with the mouse or pressing the enter key to add items to the to-do list. 
+![holiday section ](testing/holidaySectionTest.png)
+
+* Also on the above page, there is no option for the user to delete items entered onto the list either by mistake or items which are no longer needed. I think this functionality would have worked if my to-do list was a list item rather than a form element. 
+
+*  There is an overflow which I am unable to remove, which impacts the usability when scaling the page. 
+![site scalability](testing/scalability.png)
+  
 
 
 ## **Deployment**
@@ -239,10 +230,12 @@ I’d like to thank the Code Institute tutors who spent time walking through my 
 
 ### **Content:**
 * Most of the content was written by myself.
-* Icons in the forms were taken from [Font Awesome](https://fontawesome.com) 
+* Icons in the forms were taken from ![Font Awesome](https://fontawesome.com) 
+* This video supported the Currency Converter element on thie site [CodingNepal
+](https://www.youtube.com/watch?v=UY7F37KHyI8)
 
 ### **Media:**
-* Images used for activities were taken from [Pexels](https://www.pexels.com/)
+* Video used as hero image was taken from ![Pexels](https://www.pexels.com/)
 
 
 

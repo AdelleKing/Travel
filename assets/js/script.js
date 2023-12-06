@@ -1,10 +1,15 @@
+//this is in it's own file as I felt it supported the better laoding of the page.
+//the countries.js file is referenced within this file and then both files are loaded
+//from the index.html file.
+
 
 const dropList = document.querySelectorAll('.drop-list select'),
 fromCurrency=document.querySelector('.from select'),
 toCurrency=document.querySelector('.to select'),
 getButton = document.querySelector('form button');
 
-/* looping through the external file in main.js, where the cuntry names and codes are stored. then appending these to the drop down list within the HTML*/
+/* looping through the external file in countries.js, where the cuntry names and codes are stored. 
+then appending these to the drop down list within the HTML*/
 for(let i=0; i<dropList.length; i++){
   for(currency_code in country_list){
     let selected;
@@ -22,6 +27,10 @@ for(let i=0; i<dropList.length; i++){
   })
 }
 
+/**
+ * this is another API used within the site to align country flags to thier currency.
+ * 
+ */
 function loadFlag(element){
   for (code in country_list){
     if(code == element.value){

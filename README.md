@@ -27,13 +27,14 @@ The currency converter will provide real time exchange rates for the currency su
  1. [**Current Features**](#current-features)
     * [***Main body:***](#main-body)
         * [*Navigation Bar*](#navigation-bar)
-        * [*toggle functionality *]  
+        * [*toggle functionality *](#toggle-functionality)
+        
     * [**Footer**](#footer)
 1. [**Future-Enhancements**](#future-enhancements)
 1. [**Testing Phase**](#testing-phase)
-        * [*Testing*](#Testing)
-        * [*Testing User Stories from User Experience (UX) Section*](#Testing-User-Stories-from-User-Experience-(UX)-Section)        
-        * [*Further Testing*](#Further-Testing)
+    * [*Testing*](#Testing)
+        * [*Testing User Stories from User Experience (UX) Section*](#Testing-User-Stories-from-User-Experience-(UX)-Section) 
+        * [*Further Testing*](#Further-Testing) 
 1. [**Accessibility**](#Accessibility)
 1. [**Known Bugs**](#Known-Bugs)
 1. [**Deployment**](#deployment)
@@ -227,12 +228,12 @@ I’d like to thank the Code Institute tutors who spent time walking through my 
 
 ### **Content:**
 * Most of the content was written by myself.
-* Icons in the forms were taken from ![Font Awesome](https://fontawesome.com) 
+* Icons in the forms were taken from [Font Awesome](https://fontawesome.com) 
 * This video supported the Currency Converter element on thie site [CodingNepal
 ](https://www.youtube.com/watch?v=UY7F37KHyI8)
 
 ### **Media:**
-* Video used as hero image was taken from ![Pexels](https://www.pexels.com/)
+* Video used as hero image was taken from [Pexels](https://www.pexels.com/)
 
 
 
